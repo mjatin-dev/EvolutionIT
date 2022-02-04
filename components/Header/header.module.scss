@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 80px;
+  width: 80%;
+  margin: auto;
+  // background-color: #a6f5ff1c;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  .tabsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .tab {
+      margin: 1rem;
+      cursor: pointer;
+      width: 100px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      & span {
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(0, 21, 46, 0.7);
+        letter-spacing: 0.5px;
+        transition: color 0.2s ease;
+        &:hover {
+          color: rgba(0, 21, 46, 0.9);
+        }
+      }
+      // &:hover {
+      //   background-color: #a6f5ff56;
+      // }
+    }
+  }
+  .logoContainer {
+    height: 32px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & h3 {
+      margin: 0;
+    }
+  }
+
+  .headerButton {
+    background-color: rgb(65, 147, 255);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+  }
+}
+
+.mainBackground {
+  background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 460px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container {
+  display: inline-block;
+  // width: 200px;
+  width: fit-content;
+  margin-left: 20%;
+}
+.typedOut {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(0, 132, 255);
+  white-space: nowrap;
+  animation: typing 3s forwards;
+  animation-iteration-count: infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
