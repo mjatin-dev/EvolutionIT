@@ -1,0 +1,14 @@
+.servicesContainer {
+  height: 100vh;
+  //   background-color: rgba(248, 248, 248, 0.699);
+  padding: 2rem 0;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .servicesMainHeading {
+    margin-left: 1rem;
+  }
+}

@@ -2,35 +2,85 @@ import type { NextPage } from "next";
 import styles from "./header.module.scss";
 import headerTabs from "../constants/headerTabs";
 import Button from "../Button";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import { Tab } from "../constants/headerTabs";
+import Image from "next/image";
+
+const currentHoverTabInitialState: Tab = {
+  links: [],
+  tabName: "",
+  id: 0,
+};
 
 const Header: NextPage = () => {
+  const [currentHoverTab, setCurrentHoverTab] = useState<Tab>(
+    currentHoverTabInitialState
+  );
   return (
     <>
-      <header className={styles.header}>
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className={styles.header}
+      >
         <div className={styles.logoContainer}>
           <h3>Logo</h3>
         </div>
         <div className={styles.tabsContainer}>
           {headerTabs &&
             headerTabs.map((tab) => {
-              const { id, tabName } = tab;
+              const { id, tabName, links } = tab;
               return (
-                <div className={styles.tab} key={id}>
+                <motion.div
+                  onHoverStart={(e) => {
+                    setCurrentHoverTab(tab);
+                  }}
+                  onHoverEnd={(e) => {
+                    setCurrentHoverTab(currentHoverTabInitialState);
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className={styles.tab}
+                  key={id}
+                >
                   <span>{tabName}</span>
-                </div>
+                  <AnimatePresence>
+                    {currentHoverTab.id === id && links && links.length > 0 && (
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className={styles.hoverTabContainer}
+                        key={`header-tab-${id}`}
+                      >
+                        {links.map((link) => {
+                          return (
+                            <div key={link.name} className={styles.hoverTab}>
+                              <Image
+                                src={link.iconSrc}
+                                alt={link.name}
+                                width={25}
+                                height={25}
+                              />
+                              <span className={styles.hoverTabTitle}>
+                                {link.name}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
               );
             })}
         </div>
         <div className={styles.logoContainer}>
           <Button text="Get In Touch" className={styles.headerButton} />
         </div>
-      </header>
-      <div className={styles.mainBackground}>
-        <div className={styles.container}>
-          <h3>We are evolution</h3>
-          <div className={styles.typedOut}>Web Developer</div>
-        </div>
-      </div>
+      </motion.header>
     </>
   );
 };
