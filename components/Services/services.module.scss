@@ -1,14 +1,96 @@
+@import "../../styles/variables.scss";
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .servicesContainer {
-  height: 100vh;
-  //   background-color: rgba(248, 248, 248, 0.699);
-  padding: 2rem 0;
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+  padding: 4rem 0;
 
   .servicesMainHeading {
     margin-left: 1rem;
+  }
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  width: 100%;
+  gap: 5vw;
+  margin-top: 3rem;
+  .servicesCol {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      264deg,
+      rgba(255, 255, 255, 0.19931722689075626) 46%,
+      rgba(70, 228, 254, 0.44861694677871145) 86%
+    );
+    border-radius: 1rem;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+  }
+  .servicesBox {
+    width: 50%;
+    margin-left: auto;
+    & > p {
+      border-bottom: 2px solid #fff;
+      width: fit-content;
+    }
+  }
+  .serviceImage {
+    width: 50% !important;
+  }
+}
+.technologiesContainer {
+  height: 100vh;
+  width: 100%;
+
+  .technologiesMainHeading {
+    margin-left: 1rem;
+  }
+
+  .technologiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    gap: 5vw;
+    margin-top: 3rem;
+    .technologiesCol {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+.servicesCard {
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .servicesCardImageContainer {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 }
