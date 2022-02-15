@@ -6,13 +6,11 @@ export interface Tab {
   links: Array<Link>;
   tabName: string;
   id: number;
-  path: string;
 }
 interface Link {
   name: string;
   url: string;
   iconSrc: StaticImageData;
-  path: string;
 }
 
 const headerTabs: Array<Tab> = [
@@ -20,21 +18,18 @@ const headerTabs: Array<Tab> = [
     links: [
       {
         name: "Web Development",
-        url: "google.com",
+        url: "/services/web-development",
         iconSrc: laptop,
-        path: "/Development/WebDevelopment",
       },
       {
         name: "Mobile App Development",
-        url: "google.com",
+        url: "/services/app-development",
         iconSrc: shopping,
-        path: "/Development/WebDevelopment",
       },
       {
         name: "Data Analytics",
         url: "google.com",
         iconSrc: worldwide,
-        path: "/Development/WebDevelopment",
       },
     ],
     tabName: "services",
@@ -46,13 +41,11 @@ const headerTabs: Array<Tab> = [
         name: "Internet of things",
         url: "google.com",
         iconSrc: worldwide,
-        path: "/Development/WebDevelopment",
       },
       {
         name: "Internet",
         url: "google.com",
         iconSrc: laptop,
-        path: "/Development/WebDevelopment",
       },
     ],
     tabName: "solutions",
@@ -61,13 +54,11 @@ const headerTabs: Array<Tab> = [
   {
     links: [],
     tabName: "company",
-    path: "/Development/WebDevelopment",
     id: 3,
   },
   {
     links: [],
     tabName: "portfolio",
-    path: "/Development/WebDevelopment",
     id: 4,
   },
 ];

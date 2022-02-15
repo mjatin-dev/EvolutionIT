@@ -12,7 +12,6 @@ const currentHoverTabInitialState: Tab = {
   links: [],
   tabName: "",
   id: 0,
-  path: "",
 };
 
 const Header: NextPage = () => {
@@ -66,11 +65,10 @@ const Header: NextPage = () => {
                                 width={25}
                                 height={25}
                               />
-                              <Link
-                                href={link.path}
-                                className={styles.hoverTabTitle}
-                              >
-                                {link.name}
+                              <Link href={link.url}>
+                                <span className={styles.hoverTabTitle}>
+                                  {link.name}
+                                </span>
                               </Link>
                             </div>
                           );

@@ -25,31 +25,68 @@
     padding: 2rem;
     transition: all 0.3s ease;
     background: rgb(255, 255, 255);
-    background: linear-gradient(
-      264deg,
-      rgba(255, 255, 255, 0.19931722689075626) 46%,
-      rgba(70, 228, 254, 0.44861694677871145) 86%
-    );
     border-radius: 1rem;
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: relative;
+    // &:hover {
+    //   transform: translateY(-3px);
+    //   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    // }
+
+    .servicesColImageContianer {
+      width: 60%;
+      max-width: 250px;
+      margin: auto;
+      max-height: 400px;
+    }
+    .servicesListContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 50%;
+      transform: translateY(-50%);
+      height: fit-content;
+      z-index: 1;
+      border-radius: 0.5rem;
+      background-image: linear-gradient(to bottom, #397bf9, #0042bf);
+      &.greenBackground {
+        background-image: linear-gradient(to bottom, #70aa26, #305600);
+      }
+      & > p {
+        padding: 2rem;
+        color: #fff;
+        font-weight: 600;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+        width: 100%;
+      }
+      & > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        & > li {
+          padding: 1rem 2rem;
+          color: #fff;
+          font-weight: 400;
+          border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+        }
+      }
     }
   }
-  .servicesBox {
-    width: 50%;
-    margin-left: auto;
-    & > p {
-      border-bottom: 2px solid #fff;
-      width: fit-content;
-    }
-  }
-  .serviceImage {
-    width: 50% !important;
-  }
+  // .servicesBox {
+  //   width: 50%;
+  //   margin-left: auto;
+  //   & > p {
+  //     border-bottom: 2px solid #fff;
+  //     width: fit-content;
+  //   }
+  // }
 }
 .technologiesContainer {
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
 
   .technologiesMainHeading {

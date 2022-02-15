@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import styles from "./services.module.scss";
 import servicesImageIcon from "../../assets/icons/briefcase.gif";
-import service1 from "../../assets/images/service1.svg";
-import service2 from "../../assets/images/service2.svg";
+import service1 from "../../assets/images/mobile_development.webp";
+import service2 from "../../assets/images/web_development.jpg";
 import Image from "next/image";
 import technologiesUsed, {
   ServiceCardPropsInterface,
@@ -27,7 +27,7 @@ const Services: NextPage = () => {
           <p className="primary-text">What’s Brewing In The Code Brew Lab?</p>
           <div className={styles.servicesGrid}>
             <div className={styles.servicesCol}>
-              <div className={styles.servicesBox}>
+              {/* <div className={styles.servicesBox}>
                 <p className="primary-text">Mobile App Development</p>
                 <ul>
                   <li className="secondary-text">iOS App</li>
@@ -42,11 +42,27 @@ const Services: NextPage = () => {
                   alt="web development"
                   className={styles.serviceImage}
                 />
+              </div> */}
+              <div className={styles.servicesListContainer}>
+                <p className="primary-text">Mobile App Development</p>
+                <ul>
+                  <li className="secondary-text">iOS App</li>
+                  <li className="secondary-text">Android App</li>
+                  <li className="secondary-text">Native App</li>
+                  <li className="secondary-text">Hybrid App</li>
+                </ul>
+              </div>
+              <div className={styles.servicesColImageContianer}>
+                <Image
+                  src={service1}
+                  alt="web development"
+                  className={styles.serviceImage}
+                />
               </div>
             </div>
             <div className={styles.servicesCol}>
-              <div className={styles.servicesBox}>
-                <p className="primary-text">Web Development</p>
+              {/* <div className={styles.servicesBox}>
+                <p className="primary-text">Mobile App Development</p>
                 <ul>
                   <li className="secondary-text">iOS App</li>
                   <li className="secondary-text">Android App</li>
@@ -55,6 +71,24 @@ const Services: NextPage = () => {
                 </ul>
               </div>
               <div className={styles.servicesBox}>
+                <Image
+                  src={service1}
+                  alt="web development"
+                  className={styles.serviceImage}
+                />
+              </div> */}
+              <div
+                className={`${styles.servicesListContainer} ${styles.greenBackground}`}
+              >
+                <p className="primary-text">UI & UX Design</p>
+                <ul>
+                  <li className="secondary-text">Mobile & Web Design</li>
+                  <li className="secondary-text">Product Design</li>
+                  <li className="secondary-text">Brand & Logo Design</li>
+                  <li className="secondary-text">Visual Design</li>
+                </ul>
+              </div>
+              <div className={styles.servicesColImageContianer}>
                 <Image
                   src={service2}
                   alt="web development"
