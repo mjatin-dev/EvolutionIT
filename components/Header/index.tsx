@@ -6,11 +6,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Tab } from "../constants/headerTabs";
 import Image from "next/image";
+import Link from "next/link";
 
 const currentHoverTabInitialState: Tab = {
   links: [],
   tabName: "",
   id: 0,
+  path: "",
 };
 
 const Header: NextPage = () => {
@@ -64,9 +66,12 @@ const Header: NextPage = () => {
                                 width={25}
                                 height={25}
                               />
-                              <span className={styles.hoverTabTitle}>
+                              <Link
+                                href={link.path}
+                                className={styles.hoverTabTitle}
+                              >
                                 {link.name}
-                              </span>
+                              </Link>
                             </div>
                           );
                         })}

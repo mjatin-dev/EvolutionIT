@@ -3,7 +3,6 @@ import styles from "./services.module.scss";
 import servicesImageIcon from "../../assets/icons/briefcase.gif";
 import Image from "next/image";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useEffect } from "react";
 
 const Services: NextPage = () => {
   const x = useMotionValue(0);
