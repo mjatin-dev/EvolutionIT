@@ -61,6 +61,22 @@ const Services: NextPage = () => {
               </div>
             </div>
             <div className={styles.servicesCol}>
+              {/* <div className={styles.servicesBox}>
+                <p className="primary-text">Mobile App Development</p>
+                <ul>
+                  <li className="secondary-text">iOS App</li>
+                  <li className="secondary-text">Android App</li>
+                  <li className="secondary-text">Native App</li>
+                  <li className="secondary-text">Hybrid App</li>
+                </ul>
+              </div>
+              <div className={styles.servicesBox}>
+                <Image
+                  src={service1}
+                  alt="web development"
+                  className={styles.serviceImage}
+                />
+              </div> */}
               <div
                 className={`${styles.servicesListContainer} ${styles.greenBackground}`}
               >
