@@ -76,15 +76,13 @@ const Service: NextPage<ServiceInterface> = ({
           </div>
         </div>
       )}
-      <div className="container">
-        {techDetails &&
-          techDetails.length > 0 &&
-          techDetails.map((service, index) => {
-            return (
-              <TechSection key={`tech-section-detail-${index}`} {...service} />
-            );
-          })}
-      </div>
+      {techDetails &&
+        techDetails.length > 0 &&
+        techDetails.map((service, index) => {
+          return (
+            <TechSection key={`tech-section-detail-${index}`} {...service} />
+          );
+        })}
     </>
   );
 };
@@ -97,14 +95,20 @@ const TechSection: NextPage<TechSectionInterface> = ({
   return (
     <>
       <div className={styles.techSectionContainer}>
-        <div className={styles.techSectionImageSection}>
-          <div className={styles.techSectionImageContainer}>
-            <Image src={image} alt="tech" className={styles.techSectionImage} />
+        <div className={`${styles.techSectionAlternateBackground} container`}>
+          <div className={styles.techSectionImageSection}>
+            <div className={styles.techSectionImageContainer}>
+              <Image
+                src={image}
+                alt="tech"
+                className={styles.techSectionImage}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.techSectionDetails}>
-          <p className="secondary-text">{title}</p>
-          <p className="normal-text">{description}</p>
+          <div className={styles.techSectionDetails}>
+            <p className="secondary-text">{title}</p>
+            <p className="normal-text">{description}</p>
+          </div>
         </div>
       </div>
     </>
