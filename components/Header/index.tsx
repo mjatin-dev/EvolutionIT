@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Tab } from "../constants/headerTabs";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const currentHoverTabInitialState: Tab = {
   links: [],
@@ -18,6 +19,7 @@ const Header: NextPage = () => {
   const [currentHoverTab, setCurrentHoverTab] = useState<Tab>(
     currentHoverTabInitialState
   );
+  const router = useRouter();
   return (
     <>
       <motion.header
@@ -26,7 +28,7 @@ const Header: NextPage = () => {
         transition={{ delay: 0.3 }}
         className={styles.header}
       >
-        <div className={styles.logoContainer}>
+        <div className={styles.logoContainer} onClick={() => router.push("/")}>
           <h3>Logo</h3>
         </div>
         <div className={styles.tabsContainer}>
