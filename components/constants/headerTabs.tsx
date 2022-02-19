@@ -18,12 +18,12 @@ const headerTabs: Array<Tab> = [
     links: [
       {
         name: "Web Development",
-        url: "google.com",
+        url: "/services/web-development",
         iconSrc: laptop,
       },
       {
         name: "Mobile App Development",
-        url: "google.com",
+        url: "/services/app-development",
         iconSrc: shopping,
       },
       {
