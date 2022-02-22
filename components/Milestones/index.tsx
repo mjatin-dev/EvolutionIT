@@ -5,6 +5,7 @@ import thoughtProcess from "../../assets/images/thought-process.svg";
 import milestone, {
   MilestoneItem as MilestoneItemInterface,
 } from "../constants/milestones";
+import Image from "next/image";
 const Milestones: NextPage = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const Milestones: NextPage = () => {
           </div>
         </div>
         <div className={styles.milestoneImage}>
-          <img src={thoughtProcess} alt="thought-process" />
+          <Image src={thoughtProcess} alt="thought-process" />
         </div>
       </div>
     </>
