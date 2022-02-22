@@ -24,7 +24,7 @@ const Services: NextPage = () => {
               Services
             </p>
           </div>
-          <p className="primary-text">What’s Brewing In The Code Brew Lab?</p>
+          <p className="primary-text">What Zephyr&apos;s do in Logic Zephyr?</p>
           <div className={styles.servicesGrid}>
             <div className={styles.servicesCol}>
               {/* <div className={styles.servicesBox}>

@@ -5,7 +5,6 @@ import Button from "../Button";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Tab } from "../constants/headerTabs";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -29,7 +28,7 @@ const Header: NextPage = () => {
         className={styles.header}
       >
         <div className={styles.logoContainer} onClick={() => router.push("/")}>
-          <h3>Logo</h3>
+          <h3>Logic Zephyr</h3>
         </div>
         <div className={styles.tabsContainer}>
           {headerTabs &&
@@ -61,13 +60,7 @@ const Header: NextPage = () => {
                         {links.map((link) => {
                           return (
                             <div key={link.name} className={styles.hoverTab}>
-                              <Image
-                                src={link.iconSrc}
-                                alt={link.name}
-                                width={25}
-                                height={25}
-                              />
-                              <Link href={link.url}>
+                              <Link href={link.url} passHref>
                                 <span className={styles.hoverTabTitle}>
                                   {link.name}
                                 </span>

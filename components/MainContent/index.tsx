@@ -28,9 +28,9 @@ const MainContent: NextPage = () => {
             },
           }}
         >
-          We Brew Success For You With Our Exceptional Skills.
+          We are <span>Zephyr&apos;s </span>Success For You With Our Exceptional
+          Skills.
         </motion.p>
-        {/* <div className={styles.typedOut}>Web Developer</div> */}
       </div>
     </motion.div>
   );

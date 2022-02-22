@@ -93,33 +93,132 @@ const services: Array<ServiceInterface> = [
     },
   },
   {
-    path: "app-development",
-    name: "Android Development",
+    path: "ui-ux-design",
+    name: "Designing",
     smallDescription: "",
     techDetails: [
       {
         image: briefcase,
-        title: "iOS App Building Process",
+        title: "UX Design",
         description:
-          "Just like Apple, we align ourselves with the “Think Different” tagline in our thoughts before we start a project. iOS users are more demanding than android and they look for perfection in each iOS app they install. The steps below will show you how we get to the level of perfection",
+          "UX is all about the functionality of your design and how it operates with your users and with the help of our user centric approach and extensive research we create awesome designs.",
       },
       {
         image: briefcase,
-        title: "Wireframing and Mock-Up",
+        title: "User Research & Strategy",
         description:
-          "From the looks of your iOS application to its usefulness, we develop everything with our focus on detail and ease of accessibility. An app communicates the way it’s designed and we help you get your message through to your user.",
+          "Users are everything, they decide what works and what doesn’t and we like to know them well. We constantly research about their tastes and preferences and understand the direction they are moving in so that we are there when they reach a new place.",
       },
       {
         image: briefcase,
-        title: "Code Building and Debug",
+        title: "User Personas",
         description:
-          "Once the wireframing and experience is designed, we write a strong codebase which works behind the app to make it functional and provide usefulness. We test it at different stages and make sure that there are no crashes in the final build.",
+          "User personas are profiles which imitate a real person and are based on user research like user behavior's, attitudes, likes and dislikes which help in designing and understanding the design from a users perspective.",
       },
       {
         image: briefcase,
-        title: "Delivery and Support",
+        title: "User Stories & Flows",
         description:
-          "Finally, we launch your app when the time is right and get your downloads started to see how your app fulfils the purpose it was created for and continuously provide support to keep it running at it’s best. We also suggest timely updates to keep your app exciting and up to the mark.",
+          "We carefully carve a path for the user to understand and learn about your product, have reasons to go for it and finally let them know how to go about it.",
+      },
+      {
+        image: briefcase,
+        title: "Wireframes & Prototyping",
+        description:
+          "This helps in finding a solution for user validation meaning how to provide a solution for a particular problem the user is facing and in providing relevant feedback to enhance the build.",
+      },
+      {
+        image: briefcase,
+        title: "User Interface Design",
+        description:
+          "This is the final step where we create interactive designs focussed on the user and assess how visual elements are laid out, how they look and feel and finally how responsive they are.",
+      },
+    ],
+  },
+  {
+    path: "digital-marketing",
+    name: "Digital Marketing",
+    smallDescription: "",
+    techDetails: [
+      {
+        image: briefcase,
+        title: "Pay per click campaigns",
+        description:
+          "Pay per click campaigns are used by everyone to generate instant results and reach directly to the customers through adverts. Online ads are much cheaper as compared to print and television ads making it even more useful and valuable. Large scale platforms like Google, Facebook and Twitter have their own advertising tools and we leverage in order to drive results for you.",
+      },
+      {
+        image: briefcase,
+        title: "Social Media Marketing",
+        description:
+          "Some people say that social media is dying but contrary to that belief, it works really well for businesses and marketing activities. Everyone has an account at least on one social networking platform if not more and we help you get your message across to them.",
+      },
+      {
+        image: briefcase,
+        title: "Content Marketing",
+        description:
+          "Creating good content is serious business and it requires a lot of work. Our content team can help you write amazing blog posts, create eye catching banners and stills, and make awesome videos through advanced tools like Adobe Creative Cloud and Cored Draw.",
+      },
+      {
+        image: briefcase,
+        title: "Branding and PR",
+        description:
+          "We also help you with branding and PR activities which provide widespread awareness in no time. We can get articles published on popular websites and newspapers related to your industry and help you gain trust and recognition by influencer marketing techniques which can boost your business rapidly.",
+      },
+    ],
+  },
+  {
+    path: "seo-marketing",
+    name: "Search engine optimization",
+    smallDescription: "",
+    techDetails: [
+      {
+        image: briefcase,
+        title: "Keyword Research",
+        description:
+          "The first step is to analyze what are people actively searching for and which of these searches are relevant for your your business. For example, Simply typing your query on google search will give you the results which were most relevant for that query.",
+      },
+      {
+        image: briefcase,
+        title: "On-Page Optimization",
+        description:
+          "You have multiple web pages on your website and on page optimization is all about ranking those pages individually in the search results for different keywords they provide information about and using those keywords in important html tags.",
+      },
+      {
+        image: briefcase,
+        title: "Competition Analysis",
+        description:
+          "The second step after you’ve figured the keywords you want your web optimization to rank for is to assess the current performance as compared to the leaders in your industry who are already showing up on the first page in the search results for those particular keywords.",
+      },
+      {
+        image: briefcase,
+        title: "Off-Page Optimization",
+        description:
+          "So you’ve got the above steps fixed and are waiting for the results, well it’s not so easy. After you’ve got your website optimization steps right, it’s time for link building from high authority and trust flow websites which point the user from their website to yours.",
+      },
+    ],
+  },
+  {
+    path: "full-stack-development",
+    name: "Full Stack Development",
+    smallDescription: "",
+    techDetails: [
+      {
+        image: briefcase,
+        title: "Front End Development",
+        description:
+          "Front end development is the representation of data useful to your users with a graphic interface which lets them engage and interact with the data shown through your application. We make awesome user interfaces and experiences for your users to retain them on your app through our Front-end Development capabilities.",
+      },
+      {
+        image: briefcase,
+        title: "Back-End Development",
+        description:
+          "Back-end is the engine which powers your app to provide a seamlessly exclusive experience for your users through creating components and functionality based on their interests. We help build powerful logical computations and apply it to your app.",
+      },
+      {
+        image: briefcase,
+        title: "Cloud Hosting",
+        description:
+          "We help you create a cloud-based infrastructure for your applications which help you scale faster and perform better. Our cloud hosting services also gives your app the flexibility to add new features and modules easily.",
       },
     ],
   },

@@ -7,8 +7,9 @@ import services, {
   Category,
 } from "../../components/constants/services";
 import Image from "next/image";
+import Footer from "../../components/Footer";
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
   const paths =
     services &&
     services.length > 0 &&
@@ -21,7 +22,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({
+export const getStaticProps = async ({
   params,
 }: {
   params: { service: string };
@@ -83,6 +84,7 @@ const Service: NextPage<ServiceInterface> = ({
             <TechSection key={`tech-section-detail-${index}`} {...service} />
           );
         })}
+      <Footer />
     </>
   );
 };

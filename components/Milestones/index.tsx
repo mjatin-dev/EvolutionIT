@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import styles from "./styles.module.scss";
 import thoughtProcess from "../../assets/images/thought-process.svg";
-import Image from "next/image";
+
 import milestone, {
   MilestoneItem as MilestoneItemInterface,
 } from "../constants/milestones";
@@ -19,7 +19,7 @@ const Milestones: NextPage = () => {
           </div>
         </div>
         <div className={styles.milestoneImage}>
-          <Image src={thoughtProcess} alt="thought-process" />
+          <img src={thoughtProcess} alt="thought-process" />
         </div>
       </div>
     </>

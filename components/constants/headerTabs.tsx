@@ -10,7 +10,6 @@ export interface Tab {
 interface Link {
   name: string;
   url: string;
-  iconSrc: StaticImageData;
 }
 
 const headerTabs: Array<Tab> = [
@@ -19,17 +18,22 @@ const headerTabs: Array<Tab> = [
       {
         name: "Web Development",
         url: "/services/web-development",
-        iconSrc: laptop,
       },
       {
-        name: "Mobile App Development",
-        url: "/services/app-development",
-        iconSrc: shopping,
+        name: "Designing",
+        url: "/services/ui-ux-design",
       },
       {
-        name: "Data Analytics",
-        url: "google.com",
-        iconSrc: worldwide,
+        name: "Digital Marketing",
+        url: "/services/digital-marketing",
+      },
+      {
+        name: "Search engine optimization",
+        url: "/services/seo-marketing",
+      },
+      {
+        name: "Full Stack Development",
+        url: "/services/full-stack-development",
       },
     ],
     tabName: "services",
@@ -40,12 +44,10 @@ const headerTabs: Array<Tab> = [
       {
         name: "Internet of things",
         url: "google.com",
-        iconSrc: worldwide,
       },
       {
         name: "Internet",
         url: "google.com",
-        iconSrc: laptop,
       },
     ],
     tabName: "solutions",

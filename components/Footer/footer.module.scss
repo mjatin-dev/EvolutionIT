@@ -1,11 +1,7 @@
 .footer {
   margin-top: 3rem;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 255, 240, 0.2189250700280112) 90%
-  );
+  background: linear-gradient(270deg, white 0%, rgb(63 190 207) 90%);
 
   & > div {
     display: flex;
