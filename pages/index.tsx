@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import MainContent from "../components/MainContent";
 import Milestones from "../components/Milestones";
 import Services from "../components/Services";
-
+import Script from "next/script";
 const Home: NextPage = () => {
   return (
     <>
@@ -13,6 +13,8 @@ const Home: NextPage = () => {
       <Services />
       <Milestones />
       <Footer />
+      <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
+      <script>AOS.init();</script>
     </>
   );
 };

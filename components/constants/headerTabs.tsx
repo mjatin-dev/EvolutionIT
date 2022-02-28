@@ -6,6 +6,7 @@ export interface Tab {
   links: Array<Link>;
   tabName: string;
   id: number;
+  href?: string;
 }
 interface Link {
   name: string;
@@ -35,31 +36,30 @@ const headerTabs: Array<Tab> = [
     tabName: "services",
     id: 1,
   },
+
   {
-    links: [
-      {
-        name: "Internet of things",
-        url: "google.com",
-        iconSrc: worldwide,
-      },
-      {
-        name: "Internet",
-        url: "google.com",
-        iconSrc: laptop,
-      },
-    ],
-    tabName: "solutions",
+    links: [],
+    href: "",
+    tabName: "company",
     id: 2,
   },
   {
     links: [],
-    tabName: "company",
+    href: "/portfolio",
+    tabName: "portfolio",
     id: 3,
   },
   {
     links: [],
-    tabName: "portfolio",
+    href: "/contact-us",
+    tabName: "contact us",
     id: 4,
+  },
+  {
+    links: [],
+    href: "/careers",
+    tabName: "career",
+    id: 5,
   },
 ];
 

@@ -1,3 +1,4 @@
+@import "../../styles//variables.scss";
 .header {
   position: sticky;
   top: 0;
@@ -12,11 +13,15 @@
   margin-bottom: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  .tabsContainer {
+  .tabsContainer,
+  .tabsContainerMobile {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    .closeIcon {
+      display: none;
+    }
     .tab {
       padding: 1rem;
       cursor: pointer;
@@ -40,6 +45,8 @@
 
       .hoverTabContainer {
         position: absolute;
+        top: 1rem;
+        left: 2rem;
         top: 100%;
         left: 50%;
         transform: translate(-50%, 0);
@@ -61,16 +68,22 @@
       }
     }
   }
+  .tabsContainerMobile {
+    display: none;
+  }
   .logoContainer {
     height: 32px;
     margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3fbfd0;
+    // color: #3fbfd0;
     cursor: pointer;
     & h3 {
       margin: 0;
+      margin-left: 0.5rem;
+      font-family: $font-family-comfortaa;
+      color: #2196f3;
     }
   }
 
@@ -79,5 +92,77 @@
     font-size: 14px;
     font-weight: 400;
     border-radius: 4px;
+  }
+  .hamburgerContainer,
+  .mobileBackdrop {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    align-items: center;
+    .mobileBackdrop {
+      position: absolute;
+      display: block;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 999;
+      background-color: rgba(0, 0, 0, 0.404);
+      .tabsContainerMobile {
+        pointer-events: all;
+        display: block;
+        background-color: #fff;
+        flex-direction: column;
+        height: 100vh;
+        min-width: 200px;
+        width: 35vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 9999;
+        .closeIcon {
+          cursor: pointer;
+          display: inline-block;
+          height: 20px;
+          position: absolute;
+          top: 1.5rem;
+          left: 1.5rem;
+          z-index: 99999;
+        }
+
+        .tab {
+          position: relative;
+          width: 100%;
+          .hoverTabContainer {
+            position: absolute;
+            top: 80%;
+            width: 98%;
+            margin: auto;
+            left: 100%;
+            background-color: #fff;
+            z-index: 999999;
+          }
+        }
+      }
+    }
+    .tabsContainer {
+      display: none;
+    }
+    .headerButtonContainer {
+      display: none;
+    }
+    .hamburgerContainer {
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      position: absolute;
+      left: calc(100vw - 97%);
+    }
   }
 }

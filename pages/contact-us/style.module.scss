@@ -1,0 +1,31 @@
+.contactUsHeroPage {
+  background: url("../../assets/images/contact-us.jpg");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    color: #fff;
+  }
+}
+
+.detailsContainer {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .detailsData {
+    flex: 0.4;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    .detailsData {
+      flex: 0.5;
+      margin: 2rem 0;
+    }
+  }
+}
