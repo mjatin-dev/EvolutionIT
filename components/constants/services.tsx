@@ -1,4 +1,5 @@
 import briefcase from "../../assets/icons/briefcase.png";
+import Background from "../../assets/images/web_development.jpg";
 
 export interface TechSectionInterface {
   image: StaticImageData;
@@ -21,6 +22,7 @@ export interface ServiceInterface {
   smallDescription: string;
   techDetails: Array<TechSectionInterface>;
   serviceCategories?: ServicesCatgory;
+  backgroundImage: StaticImageData;
 }
 
 const services: Array<ServiceInterface> = [
@@ -28,6 +30,7 @@ const services: Array<ServiceInterface> = [
     path: "web-development",
     name: "Web Development",
     smallDescription: "Helping organizations weave a captivating story",
+    backgroundImage: Background,
     techDetails: [
       {
         image: briefcase,
@@ -96,6 +99,7 @@ const services: Array<ServiceInterface> = [
     path: "app-development",
     name: "Android Development",
     smallDescription: "",
+    background: Background,
     techDetails: [
       {
         image: briefcase,

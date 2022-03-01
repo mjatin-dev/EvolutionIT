@@ -13,6 +13,39 @@ import marketing from "../../assets/images/Marketing.png";
 const Services: NextPage = () => {
   return (
     <>
+      <section className={`${styles.technologiesContainer} pt-12`}>
+        <div className="container">
+          <div className={styles.row}>
+            <Image
+              src={servicesImageIcon}
+              alt="services-icon"
+              width={30}
+              height={30}
+            />
+            <p
+              className={`${styles.technologiesMainHeading} secondary-heading`}
+            >
+              Our Core Service
+            </p>
+          </div>
+          <div className={styles.technologiesGrid}>
+            {technologiesUsed &&
+              technologiesUsed.length > 0 &&
+              technologiesUsed.map((card, index) => {
+                const { icon, title, description } = card;
+                return (
+                  <ServiceCard
+                    key={`technologies-card-${index}`}
+                    icon={icon}
+                    title={title}
+                    description={description}
+                  />
+                );
+              })}
+          </div>
+        </div>
+      </section>
+
       <section className="my-14">
         <div className="container grid sm:grid-cols-2 grid-cols-1 gap-4">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -104,38 +137,6 @@ const Services: NextPage = () => {
                 customized web development.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className={`${styles.technologiesContainer} pt-12`}>
-        <div className="container">
-          <div className={styles.row}>
-            <Image
-              src={servicesImageIcon}
-              alt="services-icon"
-              width={30}
-              height={30}
-            />
-            <p
-              className={`${styles.technologiesMainHeading} secondary-heading`}
-            >
-              Our Core Service
-            </p>
-          </div>
-          <div className={styles.technologiesGrid}>
-            {technologiesUsed &&
-              technologiesUsed.length > 0 &&
-              technologiesUsed.map((card, index) => {
-                const { icon, title, description } = card;
-                return (
-                  <ServiceCard
-                    key={`technologies-card-${index}`}
-                    icon={icon}
-                    title={title}
-                    description={description}
-                  />
-                );
-              })}
           </div>
         </div>
       </section>

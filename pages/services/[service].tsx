@@ -39,11 +39,20 @@ const Service: NextPage<ServiceInterface> = ({
   smallDescription,
   techDetails,
   serviceCategories,
+  backgroundImage,
 }) => {
+  console.log(backgroundImage);
   return (
     <>
       <Header />
-      <div className={styles.heroSection}>
+
+      <div
+        className={styles.heroSection}
+        style={{
+          background: `url(${backgroundImage.src}) no-repeat`,
+          backgroundSize: "cover",
+        }}
+      >
         <p className="primary-text">{name}</p>
         <p className="normal-text">{smallDescription}</p>
       </div>

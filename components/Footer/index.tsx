@@ -41,10 +41,10 @@ const Footer: NextPage = () => {
       </div>
       <div className={`${styles.footerCopyRight} container`}>
         <div>
-          <p>© Copyright 2022 Code Brew Labs | All Rights Reserved</p>
+          <p>© Copyright 2022 Logic Zephyr | All Rights Reserved</p>
         </div>
         <div>
-          <a>Privacy Policy </a> |<a>Terms & conditions </a>
+          <a>Privacy Policy </a> | <a>Terms & conditions </a>
         </div>
       </div>
     </>
