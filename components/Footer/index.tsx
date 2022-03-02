@@ -1,50 +1,65 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import styles from "./footer.module.scss";
-import FooterImage from "../../assets/images/footer.svg";
-import ContactUsImage from "../../assets/icons/contactus.png";
+import headerTabs from "../constants/headerTabs";
+import Link from "next/link";
 
 const Footer: NextPage = () => {
   return (
     <>
-      <div className={`${styles.footer}`}>
-        <div className="container">
-          <div>
-            <div className={styles.contactUs}>
-              <Image
-                src={ContactUsImage}
-                alt="contactus"
-                width={50}
-                height={50}
-              />
-              <h3>Contact Us</h3>
-            </div>
-            <h1>Let’s Fire Up Your Business!</h1>
-            <h2>
-              Team Up With Us Today For An Unforgettable Service Experience
-            </h2>
-            <h3>Address</h3>
-            <h5 className="secondary-text">
-              Plot no 10 # Building, <br />
-              Plot no 10 # Building,{" "}
-            </h5>
-            <div>
-              {" "}
-              <p>test@test.com</p>
-              <p>test@test.com</p>
-            </div>
-          </div>
-          <div>
-            <Image src={FooterImage} alt="Footer" width={500} height={500} />
-          </div>
+      <div className={`${styles.footer} mt-36 relative pt-24 pb-6`}>
+        <div
+          className={`${styles.footerMessageContainer} w-2/3 -mt-24 mx-auto flex flex-col justify-center align-center absolute rounded-3xl p-6`}
+        >
+          <h3 className="text-2xl text-[#ad91ec]">Ready to get started?</h3>
+          <h3 className="text-2xl text-[#6653bc]">Talk to us today</h3>
         </div>
-      </div>
-      <div className={`${styles.footerCopyRight} container`}>
-        <div>
-          <p>© Copyright 2022 Logic Zephyr | All Rights Reserved</p>
-        </div>
-        <div>
-          <a>Privacy Policy </a> | <a>Terms & conditions </a>
+        <div className="grid grid-cols-6 sm:grid-cols-4 sm:px-24 px-12 mt-6">
+          <div className="sm:col-span-1 col-span-6">
+            <h3 className="text-[#2196f3] text-2xl text-center mt-12 mb-6 sm:m-0">
+              Logic Zeyphr
+            </h3>
+          </div>
+          <div className="col-span-2 sm:col-span-1">
+            <p className="text-center sm:text-left mb-4 text-[#60677a] font-medium text-base uppercase">
+              About Us
+            </p>
+            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+              Home
+            </p>
+            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+              Get In Touch
+            </p>
+          </div>
+          <div className="col-span-2 sm:col-span-1">
+            <p className="text-center sm:text-left text-[#60677a] font-medium text-base uppercase mb-4">
+              Pages
+            </p>
+            {headerTabs?.map((tab) => {
+              const { id, tabName, href } = tab;
+              return (
+                <>
+                  {href && (
+                    <Link key={`footer-link-${id}`} href={href} passHref>
+                      <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+                        {tabName}
+                      </p>
+                    </Link>
+                  )}
+                </>
+              );
+            })}
+          </div>
+          <div className="col-span-2 sm:col-span-1">
+            <p className="text-center sm:text-left mb-4 text-[#60677a] font-medium text-base uppercase">
+              Social
+            </p>
+            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+              Linked In
+            </p>
+            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+              Instagram
+            </p>
+          </div>
         </div>
       </div>
     </>

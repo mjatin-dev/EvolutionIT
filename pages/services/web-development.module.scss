@@ -5,8 +5,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffd;
+  // background-color: #ffd;
   margin-bottom: 2rem;
+  & > p {
+    color: #fff;
+  }
 }
 
 .serviceCategoriesSection {

@@ -49,11 +49,11 @@ const Service: NextPage<ServiceInterface> = ({
       <div
         className={styles.heroSection}
         style={{
-          background: `url(${backgroundImage.src}) no-repeat`,
+          background: `url("${backgroundImage}") no-repeat`,
           backgroundSize: "cover",
         }}
       >
-        <p className="primary-text">{name}</p>
+        <p className="secondary-heading">{name}</p>
         <p className="normal-text">{smallDescription}</p>
       </div>
       {serviceCategories && (
