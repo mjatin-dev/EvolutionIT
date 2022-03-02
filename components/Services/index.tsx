@@ -130,6 +130,14 @@ const Services: NextPage = () => {
               </p>
             </div>
             <div className="relative overflow-hidden pt-24 lg:col-span-2 col-span-1 p-4 bg-[linear-gradient(90deg,#1b298f,#6f86d3)]">
+              <div className="z-0 absolute top-2 right-3 hover:scale-150 duration-500">
+                <Image
+                  src="/web_dev.svg"
+                  alt="blockchain"
+                  width={150}
+                  height={130}
+                />
+              </div>
               <p className="text-white mb-4 text-xl font-medium">
                 Web Development
               </p>

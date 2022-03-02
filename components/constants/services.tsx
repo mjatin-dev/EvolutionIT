@@ -1,9 +1,5 @@
 import briefcase from "../../assets/icons/briefcase.png";
-<<<<<<< Updated upstream
-import Background from "../../assets/images/hero_background.jpeg";
-=======
 import Background from "../../assets/images/web_development.jpeg";
->>>>>>> Stashed changes
 
 export interface TechSectionInterface {
   image: StaticImageData;

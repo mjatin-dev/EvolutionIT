@@ -5,6 +5,7 @@ import companyData from "../../components/constants/company";
 import portfolioBackground from "../../assets/images/logic-logo.png";
 import ServiceCard from "../../components/ServiceCard";
 import styles from "./styles.module.scss";
+import Footer from "../../components/Footer";
 
 const Company: NextPage = () => {
   return (
@@ -14,7 +15,7 @@ const Company: NextPage = () => {
         <div>
           <Image src={companyData.image} alt="company" height={600} />
         </div>
-        <h1 className="text-center mt-7 text-3xl">How we are</h1>
+        <h1 className="text-center mt-7 text-3xl">How we are?</h1>
         <div className="flex justify-center">
           <div className="mt-7">
             <p className="p-3 text-slate-500 hover:text-[#43a6f5]">
@@ -27,17 +28,12 @@ const Company: NextPage = () => {
             </p>
           </div>
 
-          <div>
-            <Image
-              src={portfolioBackground}
-              alt="image"
-              width={800}
-              height={800}
-            />
+          <div className="mt-6">
+            <Image src="/favicon.png" alt="image" width={220} height={220} />
           </div>
         </div>
         <div>
-          <p className="text-center">WHY HIRE US?</p>
+          <p className="text-center mt-12 text-2xl">WHY HIRE US?</p>
 
           <div className={styles.technologiesGrid}>
             {companyData.quality.map((item) => {
@@ -57,6 +53,7 @@ const Company: NextPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

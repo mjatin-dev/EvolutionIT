@@ -6,13 +6,17 @@ import Link from "next/link";
 const Footer: NextPage = () => {
   return (
     <>
-      <div className={`${styles.footer} mt-36 relative pt-24 pb-6`}>
-        <div
+      <div className={`${styles.footer} mt-36 relative pt-16 pb-4`}>
+        {/* <div
           className={`${styles.footerMessageContainer} w-2/3 -mt-24 mx-auto flex flex-col justify-center align-center absolute rounded-3xl p-6`}
         >
-          <h3 className="text-2xl text-[#ad91ec]">Ready to get started?</h3>
-          <h3 className="text-2xl text-[#6653bc]">Talk to us today</h3>
-        </div>
+          <h3 className="text-2xl text-[#ad91ec] text-center">
+            Ready to get started?
+          </h3>
+          <h3 className="text-2xl text-[#6653bc] text-center">
+            Talk to us today
+          </h3>
+        </div> */}
         <div className="grid grid-cols-6 sm:grid-cols-4 sm:px-24 px-12 mt-6">
           <div className="sm:col-span-1 col-span-6">
             <h3 className="text-[#2196f3] text-2xl text-center mt-12 mb-6 sm:m-0">
