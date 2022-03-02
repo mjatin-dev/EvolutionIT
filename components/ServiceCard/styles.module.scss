@@ -1,0 +1,23 @@
+.servicesCard {
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .servicesCardImageContainer {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,5 +1,7 @@
 import project1 from "../../assets/images/online-shopping-bg-portfolio.jpg";
-
+import ariglad from "../../assets/images/ariglad.png";
+import ore from "../../assets/images/ore.png";
+import zim from "../../assets/images/zim.png";
 interface ProjectInterface {
   project_screenshot: StaticImageData;
   project_title: string;
@@ -16,20 +18,26 @@ const portfolioData: PortfolioInterface = {
   portfolio_heading: "",
   projects: [
     {
-      project_screenshot: project1,
-      project_title: "Online Ordering and Delivery System",
+      project_screenshot: ariglad,
+      project_title: "Bring calm to your teams mounting HR tasks.",
       project_subtitle:
-        "Exclusively designed online ordering and delivery system for doorstep delivery.",
+        "HR ticketing and analytics built for leaders who want to elevate people-oriented priorities.",
       project_description:
-        "The application allows the users to order seamlessly to their doorsteps from a local liquor store, compare their prices as well as schedule delivery time as per their liking.",
+        "Ariglad automatically captures employee messages across platforms. All you need to do is log into the dashboard to see your pending tasks organized for you.",
     },
     {
-      project_screenshot: project1,
-      project_title: "CellPoint Bids",
+      project_screenshot: ore,
+      project_title: "ORE FORGE - Next Gen NFT",
       project_subtitle:
-        "Private Auction Marketplace exclusively designed for CellPoint Customers",
-      project_description:
-        "CP Bids is an application specifically designed to host the auction events of bulk mobile phones and their other accessories.",
+        "Digital marketplace for Next-Gen crypto collectibles and non-fungible tokens. Buy, sell, and discover exclusive in-game digital assets.",
+      project_description: "",
+    },
+    {
+      project_screenshot: zim,
+      project_title: "Zim/Zapp",
+      project_subtitle:
+        "Zim/Zapp is an application built to manage warehouses for the company ZAPP it’s a German-based company. The work of the project is to ease the process of their warehouses, they can create purchase orders, update the inventory of all the items, so we can easily scan the barcode for any item and get the RACK, SELF, number of that particular item.",
+      project_description: "",
     },
   ],
 };

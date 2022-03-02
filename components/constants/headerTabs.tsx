@@ -39,7 +39,7 @@ const headerTabs: Array<Tab> = [
 
   {
     links: [],
-    href: "",
+    href: "/company",
     tabName: "company",
     id: 2,
   },

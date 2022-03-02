@@ -10,6 +10,7 @@ import qaImage from "../../assets/images/qa.png";
 import iotImage from "../../assets/images/iot.png";
 import cryptocurrencyImage from "../../assets/images/Cryptocurrency.png";
 import marketing from "../../assets/images/Marketing.png";
+import ServiceCard from "../ServiceCard";
 const Services: NextPage = () => {
   return (
     <>
@@ -141,28 +142,6 @@ const Services: NextPage = () => {
         </div>
       </section>
     </>
-  );
-};
-
-const ServiceCard: NextPage<ServiceCardPropsInterface> = ({
-  icon,
-  title,
-  description,
-}) => {
-  return (
-    <div className={styles.servicesCard}>
-      <div className={`${styles.servicesCardImageContainer} ${styles.blob}`}>
-        <Image
-          src={icon}
-          alt="icon"
-          className={styles.servicesCardImage}
-          width={50}
-          height={50}
-        />
-      </div>
-      <p className="secondary-text">{title}</p>
-      <p className="normal-text">{description}</p>
-    </div>
   );
 };
 

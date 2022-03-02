@@ -8,6 +8,9 @@ module.exports = {
       backgroundImag: {
         "service-card-1": "linear-gradient(41deg,#12aaef,#0084ff)",
       },
+      colors: {
+        "regal-blue": "#43a6f5",
+      },
     },
   },
   plugins: [],
