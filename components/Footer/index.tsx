@@ -23,9 +23,11 @@ const Footer: NextPage = () => {
             <p className="text-center sm:text-left mb-4 text-[#60677a] font-medium text-base uppercase">
               About Us
             </p>
-            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
-              Home
-            </p>
+            <Link href="/" passHref>
+              <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+                Home
+              </p>
+            </Link>
             <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
               Get In Touch
             </p>
@@ -37,15 +39,13 @@ const Footer: NextPage = () => {
             {headerTabs?.map((tab) => {
               const { id, tabName, href } = tab;
               return (
-                <>
-                  {href && (
-                    <Link key={`footer-link-${id}`} href={href} passHref>
-                      <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
-                        {tabName}
-                      </p>
-                    </Link>
-                  )}
-                </>
+                href && (
+                  <Link key={`footer-link-${id}`} href={href} passHref>
+                    <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+                      {tabName}
+                    </p>
+                  </Link>
+                )
               );
             })}
           </div>

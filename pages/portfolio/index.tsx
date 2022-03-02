@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import styles from "./styles.module.scss";
 import portfolioBackground from "../../assets/images/portfolio-background.jpg";
 import projectData from "../../components/constants/portfolio";
+import Footer from "../../components/Footer";
 const Portfolio: NextPage = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const Portfolio: NextPage = () => {
             );
           })}
       </div>
+      <Footer />
     </>
   );
 };
