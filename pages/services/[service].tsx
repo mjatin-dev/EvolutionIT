@@ -75,7 +75,7 @@ const Service: NextPage<ServiceInterface> = ({
                     return (
                       <div key={title} className={styles.serviceCategory}>
                         <div className={styles.categoryImageContianer}>
-                          <Image src={icon} alt={title} />
+                          <img src={icon} alt={title} />
                         </div>
                         <p className="secondary-text">{title}</p>
                         <p className="normal-text">{description}</p>
@@ -110,11 +110,12 @@ const TechSection: NextPage<TechSectionInterface> = ({
         <div className={`${styles.techSectionAlternateBackground} container`}>
           <div className={styles.techSectionImageSection}>
             <div className={styles.techSectionImageContainer}>
-              <Image
+              {/* <Image
                 src={image}
                 alt="tech"
                 className={styles.techSectionImage}
-              />
+              /> */}
+              <img src={image} alt={title} />
             </div>
           </div>
           <div className={styles.techSectionDetails}>
