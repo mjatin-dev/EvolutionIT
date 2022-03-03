@@ -77,19 +77,13 @@ const Header: NextPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className={styles.hoverTabContainer}
+                        className={`${styles.hoverTabContainer} grid grid-cols-2`}
                         key={`header-tab-${id}`}
                       >
                         {links.map((link) => {
                           return (
                             <div key={link.name} className={styles.hoverTab}>
-                              <Image
-                                src={link.iconSrc}
-                                alt={link.name}
-                                width={25}
-                                height={25}
-                              />
-                              <Link href={link.url}>
+                              <Link href={link.url} passHref>
                                 <span className={styles.hoverTabTitle}>
                                   {link.name}
                                 </span>
@@ -149,13 +143,7 @@ const Header: NextPage = () => {
                           {links.map((link) => {
                             return (
                               <div key={link.name} className={styles.hoverTab}>
-                                <Image
-                                  src={link.iconSrc}
-                                  alt={link.name}
-                                  width={25}
-                                  height={25}
-                                />
-                                <Link href={link.url}>
+                                <Link href={link.url} passHref>
                                   <span className={styles.hoverTabTitle}>
                                     {link.name}
                                   </span>

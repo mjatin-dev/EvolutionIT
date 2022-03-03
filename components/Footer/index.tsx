@@ -32,9 +32,11 @@ const Footer: NextPage = () => {
                 Home
               </p>
             </Link>
-            <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
-              Get In Touch
-            </p>
+            <Link href="/contact-us" passHref>
+              <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
+                Get In Touch
+              </p>
+            </Link>
           </div>
           <div className="col-span-2 sm:col-span-1">
             <p className="text-center sm:text-left text-[#60677a] font-medium text-base uppercase mb-4">
@@ -55,13 +57,13 @@ const Footer: NextPage = () => {
           </div>
           <div className="col-span-2 sm:col-span-1">
             <p className="text-center sm:text-left mb-4 text-[#60677a] font-medium text-base uppercase">
-              Social
+              Address
             </p>
             <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
-              Linked In
+              GF, 07, Saini vihar phase-1, Baltana SAS Nagar - 140604.
             </p>
             <p className="text-center sm:text-left text-[#99a0ab] capitalize text-sm mb-2">
-              Instagram
+              +91 7837679339
             </p>
           </div>
         </div>

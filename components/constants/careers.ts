@@ -23,18 +23,6 @@ const positions = [
     jobLink: "",
     experienceRequired: "3+ Years",
   },
-  {
-    jobId: "5",
-    jobTitle: "IOS Developer",
-    jobLink: "",
-    experienceRequired: "3+ Years",
-  },
-  {
-    jobId: "6",
-    jobTitle: "Business Development Manager",
-    jobLink: "",
-    experienceRequired: "3+ Years",
-  },
 ];
 
 export default positions;

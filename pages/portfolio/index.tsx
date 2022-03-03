@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 import portfolioBackground from "../../assets/images/portfolio-background.jpg";
 import projectData from "../../components/constants/portfolio";
 import Footer from "../../components/Footer";
+import Link from "next/link";
 const Portfolio: NextPage = () => {
   return (
     <>
@@ -24,6 +25,15 @@ const Portfolio: NextPage = () => {
                   <p className="primary-text">{project.project_title}</p>
                   <p className="secondary-text">{project.project_subtitle}</p>
                   <p className="normal-text">{project.project_description}</p>
+                  {/* <Link href={project.project_link} passHref >
+                  </Link> */}
+                  <a
+                    target="_blank"
+                    href={project.project_link}
+                    rel="noopener noreferrer"
+                  >
+                    <button className="mt-4">View More</button>
+                  </a>
                 </div>
                 <div className={styles.projectImageContainer}>
                   <Image

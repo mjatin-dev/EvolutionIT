@@ -12,8 +12,13 @@ const Company: NextPage = () => {
     <>
       <Header />
       <div className="container">
-        <div>
-          <Image src={companyData.image} alt="company" height={600} />
+        <div
+          className="bg-[url('/company_bg1.jpg')] bg-center pt-16"
+          style={{ height: "300px", width: "100%" }}
+        >
+          {/* <Image src={companyData.image} alt="company" height={600} /> */}
+          <p className="secondary-heading text-center">We are Zeyphr&apos;s</p>
+          <p className="secondary-text text-center">Ready to build</p>
         </div>
         <h1 className="text-center mt-7 text-3xl">How we are?</h1>
         <div className="flex justify-center">

@@ -7,6 +7,7 @@ interface ProjectInterface {
   project_title: string;
   project_subtitle: string;
   project_description: string;
+  project_link: string;
 }
 
 interface PortfolioInterface {
@@ -24,6 +25,7 @@ const portfolioData: PortfolioInterface = {
         "HR ticketing and analytics built for leaders who want to elevate people-oriented priorities.",
       project_description:
         "Ariglad automatically captures employee messages across platforms. All you need to do is log into the dashboard to see your pending tasks organized for you.",
+      project_link: "https://www.ariglad.com/",
     },
     {
       project_screenshot: ore,
@@ -31,6 +33,7 @@ const portfolioData: PortfolioInterface = {
       project_subtitle:
         "Digital marketplace for Next-Gen crypto collectibles and non-fungible tokens. Buy, sell, and discover exclusive in-game digital assets.",
       project_description: "",
+      project_link: "https://ore-forge.com/",
     },
     {
       project_screenshot: zim,
@@ -38,6 +41,7 @@ const portfolioData: PortfolioInterface = {
       project_subtitle:
         "Zim/Zapp is an application built to manage warehouses for the company ZAPP it’s a German-based company. The work of the project is to ease the process of their warehouses, they can create purchase orders, update the inventory of all the items, so we can easily scan the barcode for any item and get the RACK, SELF, number of that particular item.",
       project_description: "",
+      project_link: "https://tryzapp.com/",
     },
   ],
 };

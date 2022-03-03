@@ -24,6 +24,12 @@ const ContactUs: NextPage = () => {
               upskill innovations keep our workforce creative and talented both.
               Get in touch to get going.
             </p>
+            <p className="normal-text inline">Email us @</p>
+            <a href="mailto:hr@logiczephyr.com">
+              <p className="secondary-text my-4 inline ml-1">
+                hr@logiczephyr.com
+              </p>
+            </a>
           </div>
           <div className={styles.detailsData}>
             <Image src={contactUsImage} alt="contact-us" />

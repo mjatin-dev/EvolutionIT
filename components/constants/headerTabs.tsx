@@ -1,7 +1,3 @@
-import laptop from "../../assets/icons/laptop.gif";
-import shopping from "../../assets/icons/shopping.gif";
-import worldwide from "../../assets/icons/worldwide.gif";
-
 export interface Tab {
   links: Array<Link>;
   tabName: string;
@@ -11,7 +7,6 @@ export interface Tab {
 interface Link {
   name: string;
   url: string;
-  iconSrc: StaticImageData;
 }
 
 const headerTabs: Array<Tab> = [
@@ -20,17 +15,22 @@ const headerTabs: Array<Tab> = [
       {
         name: "Web Development",
         url: "/services/web-development",
-        iconSrc: laptop,
       },
       {
-        name: "Mobile App Development",
-        url: "/services/app-development",
-        iconSrc: shopping,
+        name: "Designing",
+        url: "/services/ui-ux-design",
       },
       {
-        name: "Data Analytics",
-        url: "google.com",
-        iconSrc: worldwide,
+        name: "Digital Marketing",
+        url: "/services/digital-marketing",
+      },
+      {
+        name: "Search engine optimization",
+        url: "/services/seo-marketing",
+      },
+      {
+        name: "Full Stack Development",
+        url: "/services/full-stack-development",
       },
     ],
     tabName: "services",

@@ -6,7 +6,7 @@ import styles from "./style.module.scss";
 import servicesIcon from "../../assets/icons/briefcase.png";
 import positions from "../../components/constants/careers";
 import Footer from "../../components/Footer";
-const tabs: Array<string> = ["Jobs", "Intern"];
+const tabs: Array<string> = ["Jobs"];
 const Careers: NextPage = () => {
   const [activeTab, setActiveTab] = useState<string>(tabs[0]);
   return (
@@ -64,9 +64,11 @@ const Careers: NextPage = () => {
                         {experienceRequired}
                       </span>
                     </div>
-                    <button className={styles.learnMoreButton}>
-                      Learn More
-                    </button>
+                    <a href={`mailto:hr@logiczephyr.com?subject=${jobTitle}`}>
+                      <button className={styles.learnMoreButton}>
+                        Submit CV
+                      </button>
+                    </a>
                   </div>
                 );
               })}

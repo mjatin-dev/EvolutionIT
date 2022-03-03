@@ -48,10 +48,11 @@ const Service: NextPage<ServiceInterface> = ({
       <Header />
 
       <div
-        className={styles.heroSection}
+        className={`${styles.heroSection} w-full`}
         style={{
           background: `url("${backgroundImage}") no-repeat`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <p className="secondary-heading">{name}</p>
