@@ -104,7 +104,6 @@ const Header: NextPage = () => {
         >
           <motion.div
             animate={{ x: isMenuOpen ? 0 : -300 }}
-            transition={{ type: "just", stiffness: 100 }}
             className={styles.tabsContainerMobile}
           >
             <div
