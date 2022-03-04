@@ -41,7 +41,7 @@ const companyData: CompanyInterface = {
       icon: allUnderOneRoof,
       title: "Competitive Prices",
       description:
-        "With having certified employs in our team who know the latest techniques to accomplishing a task that cut down the time taken and cost, RichestSoft has significantly lowered the service prices and has managed to serve the clients at an unmatchable price.",
+        "With having certified employs in our team who know the latest techniques to accomplishing a task that cut down the time taken and cost, Zephyr has significantly lowered the service prices and has managed to serve the clients at an unmatchable price.",
     },
     {
       icon: competitivePrices,
@@ -53,7 +53,7 @@ const companyData: CompanyInterface = {
       icon: customizedAb,
       title: "All Under One Roof",
       description:
-        "From planning to development, development to marketing, marketing to consultation, RichestSoft covers an array of services.",
+        "From planning to development, development to marketing, marketing to consultation, Zephyr covers an array of services.",
     },
     {
       icon: qualityWork,
