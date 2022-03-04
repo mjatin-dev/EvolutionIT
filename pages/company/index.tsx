@@ -17,7 +17,7 @@ const Company: NextPage = () => {
           style={{ height: "300px", width: "100%" }}
         >
           {/* <Image src={companyData.image} alt="company" height={600} /> */}
-          <p className="secondary-heading text-center">We are Zeyphr&apos;s</p>
+          <p className="secondary-heading text-center">We are Zephyr&apos;s</p>
           <p className="secondary-text text-center">Ready to build</p>
         </div>
         <h1 className="text-center mt-7 text-3xl">How we are?</h1>

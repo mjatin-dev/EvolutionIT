@@ -20,7 +20,7 @@ const Footer: NextPage = () => {
         <div className="grid grid-cols-6 sm:grid-cols-4 sm:px-24 px-12 mt-6">
           <div className="sm:col-span-1 col-span-6">
             <h3 className="text-[#2196f3] text-2xl text-center mt-12 mb-6 sm:m-0">
-              Logic Zeyphr
+              Logic Zephyr
             </h3>
           </div>
           <div className="col-span-2 sm:col-span-1">

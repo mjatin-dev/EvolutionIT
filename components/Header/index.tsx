@@ -44,7 +44,7 @@ const Header: NextPage = () => {
         </div>
         <div className={styles.logoContainer} onClick={() => router.push("/")}>
           <Image src={logoIcon} width={30} height={30} alt="logo" />
-          <h3>Logic Zeyphr</h3>
+          <h3>Logic Zephyr</h3>
         </div>
         <motion.div className={styles.tabsContainer}>
           <div
