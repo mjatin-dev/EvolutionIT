@@ -25,11 +25,11 @@ const Company: NextPage = () => {
           <div className="mt-7">
             <p className="p-3 text-slate-500 hover:text-[#43a6f5]">
               Logic Zephyr is a global IT solution company providing full-cycle
-              services in areas of custom web design, web development, mobile
-              app development, SEO, hosting & support. Combining our solid
-              business domain experience, technical expertise, profound
-              knowledge of latest industry trends and quality-driven delivery
-              model we offer progressive end-to-end solutions.
+              services in areas of custom web design, web development, SEO,
+              hosting & support. Combining our solid business domain experience,
+              technical expertise, profound knowledge of latest industry trends
+              and quality-driven delivery model we offer progressive end-to-end
+              solutions.
             </p>
           </div>
 
